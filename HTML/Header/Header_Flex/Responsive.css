@@ -7,5 +7,85 @@
 
 body{
     margin: 0%;
-    
+    border: 10px solid turquoise;
+}
+
+section.section-1,section.section-2{
+    border: 3px solid blueviolet;
+}
+
+div.block-1{
+    display: flex;
+    align-items: center;
+    border: 2px solid teal;
+}
+
+div.phone-apointment{
+    display: flex;
+    align-items: center;
+    border: 2px solid thistle;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    border: 2px solid tomato;
+}
+li{
+    display:  inline-block;
+    border: 2px solid red;
+
+}
+div.phone-number{
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+div.phone-number i{
+    transform: rotate(180deg);
+    border: 2px red;
+}
+
+div.appointment button:hover{
+    box-sizing: 0px 0px 10px green;
+    border: 2px red;
+}
+nav li{
+    text-align: center;
+}
+nav ul li a{
+    font-size: 18px;
+    display: block;
+    color: black;
+    padding: 8px 10px;
+    margin: 0px 5px;
+    font-weight: 500;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-radius: 10px;
+    transition-property: border-bottom,background-color;
+    transition-duration: 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: lightcyan;
+    border-bottom: 5px solid black;
+}
+
+#toggle{
+    display: none;
+}
+#oggle-btn{
+    display: none;
+    text-align: right;
+}
+
+#toggle-btn i{
+    font-size: 25px;
+    padding: 7px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
