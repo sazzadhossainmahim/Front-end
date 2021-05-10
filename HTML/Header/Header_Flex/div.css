@@ -1,4 +1,13 @@
 section.section-1{
-    font-size: 14px;
+    
     flex-direction: column;
 }
+div.block-1{
+    flex-direction: row;
+
+}
+
+div.block-1 div:first-child{
+    margin-right: 40px;
+}
+
