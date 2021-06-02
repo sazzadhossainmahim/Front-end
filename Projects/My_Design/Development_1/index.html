@@ -7,17 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Root</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script>
-    $(function(){
-        $("#Headerroot").load("Header.html"); 
-      });
-      </script>
-</script>
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+
 </head>
 
 <body>
-    <div include-htl="Header.html" id=Header></div>
+    <div class="Headerroot"></div>
+    <div class="Footerroot"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".Headerroot").load("Header.html");
+            $(".Footerroot").load("Footer.html");
+        });
+
+    </script>
 </body>
+
 
 </html>
