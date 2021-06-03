@@ -1,3 +1,20 @@
-*{
-    background-color: red;
+
+.align-content{
+    width: 700px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+     align-content: flex-start;
+}
+.stretch{
+    height: 70px;
+    width: 70px;
+}
+
+.align-items{
+    width: 220px;
+    height: 300px;
+    border: 2px solid black;
+    align-items: center;
 }
