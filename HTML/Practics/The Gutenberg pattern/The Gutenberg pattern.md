@@ -1,0 +1,3 @@
+When it comes to the features of the Gutenberg – the new WordPress block editor – the sky’s the limit. The Gutenberg development team is continuing to enhance the editor after each release to bring users more features. One of those features is Gutenberg block patterns, which is a game changer. Before you know it, we’ll be able to create a full site right inside the editor. 
+
+In this article, we’ll cover the Gutenberg block patterns feature and walk you through how we can quickly create our very own custom ones.
