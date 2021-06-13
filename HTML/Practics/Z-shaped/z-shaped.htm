@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-shaped</title>
+</head>
+<style>
+    .Branding {
+        padding: 20px 10px;
+    }
+
+    .Branding a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        margin: 12px;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    .Branding a.logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .Branding a:hover {
+        background-color: rgb(216, 195, 195);
+        color: black;
+    }
+
+    .a {
+        float: right;
+    }
+
+    .Branding a.active {
+        background-color: dodgerblue;
+        color: white;
+        float: right;
+        line-height: 2px;
+    }
+
+    .Hierarchy img {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+    .left_text{
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        height: 100px;
+        background: whitesmoke;
+        width: 45%;
+    }
+    .Right_text{
+        float: inline-start;
+        margin: 10px;
+        padding: 10px;
+        height: 80px;
+        background: whitesmoke;
+        width: 35%;
+    }
+    .last_part{
+        float: right;
+        margin: 10px;
+        padding: 20px;
+        height: 40%;
+
+    }
+    .last_part button:hover{
+        font-size: 20px;
+        text-align: center;  
+        box-shadow: 0 8px ;
+    }
+</style>
+
+<body>
+
+    <div class="Branding">
+        <a href="#" class="logo">Company logo</a>
+        <div class="Branding-right"></div>
+        <a href="#" class="active">Hire me</a>
+        <a href="#" class="active">About</a>
+        <a href="#" class="active">Why Me!</a>
+    </div>
+    <div class="Hierarchy">
+        <img src="../../1pic (2).jpg" alt="">
+    </div>
+    <div class="Structure">
+        <p class="left_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea quod distinctio iste quasi adipisci ab
+            est, libero, amet sapiente corporis fuga aliquam obcaecati explicabo quisquam accusantium vel repellendus
+            dignissimos!
+        </p>
+        <p class="Right_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea quod distinctio iste quasi adipisci ab
+            est, libero, amet sapiente corporis fuga aliquam obcaecati explicabo quisquam accusantium vel repellendus
+            dignissimos!
+        </p>
+        <div class="last_part">
+           <button>logo</button> 
+        </div>
+    </div>
+
+</body>
+
+</html>
