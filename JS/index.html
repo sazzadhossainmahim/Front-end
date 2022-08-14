@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container">
+    <!-- <div id="myDiv" style="display:none;" class="answer_list">WELCOME</div> -->
+    <!-- <input id="ArrayOnClick" class="border border-black h-4 w-4" type="button" name="answer" onclick="OnClickFunctionArray()" /> -->
+
+    <button id="" class="border border-black m-2 p-1 rounded" onclick="ArrayOnClick()">Array</button>
+    <button id="" class="border border-black m-2 p-1 rounded" onclick="">String</button>
+    <button id="" class="border border-black m-2 p-1 rounded" onclick="">Number</button>
+    <button id="" class="border border-black m-2 p-1 rounded" onclick="">Array</button>
+
+    <div id="ARRAY"
+        class="hidden w-fit m-1 p-1 grid grid-cols-4 border border-red-500 gap-1 text-center text-red-400 rounded bg-cyan-100">
+        <div id="" class="border border-black ">
+            <h3 id="concat">concat()</h3>
+        </div>
+        <div id="" class="border border-black">
+            <h3 id="constructor">constructor</h3>
+        </div>
+        <div id="copyWithin" class="border border-black">
+            <h3>copywithin</h3>
+            <h3 id="cwi"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>entries</h2><br>
+            <h3 id="e" class=""></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>Every Method</h2>
+            <h3 id="Every"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2 class="underline">fill</h2>
+            <h3 id="f"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>Filter</h2>
+            <h3 id="Filters"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>Find</h2>
+            <h3 id="Find"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>FindIndex</h2>
+            <h3 id="FindIndex"></h3>
+        </div>
+
+        <div id="" class="border border-black">
+            <h2>ForEach</h2>
+            <h3 id="ForEachCall"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>from</h2>
+            <h3 id="FROM"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>includes</h2>
+            <h3 id="INCLUDES">includes</h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>indexOf</h2>
+            <h3 id="INDEXOFF"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>isArray</h2>
+            <h3 id="ISARRAY">isArray</h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>join</h2>
+            <h3 id="JOIN"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>keys</h2>
+            <h3 id="KEYS"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>lastIndexOf</h2>
+            <h3 id="LASTINDEXOF"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>length</h2>
+            <h3 id="LENGTH"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>map</h2>
+            <h3 id="MAP"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>pop</h2>
+            <h3 id="POP"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>prototype</h2>
+            <h3 id="PROTOTYPE"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>push</h2>
+            <h3 id="PUSH"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>reduce</h2>
+            <h3 id="REDUCE"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>reduceRight</h2>
+            <h3 id="REDUCERIGHT"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>reverse</h2>
+            <h3 id="REVERSE"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>shift</h2>
+            <h3 id="SHIFT"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>slice</h2>
+            <h3 id="SLICE"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>some</h2>
+            <h3 id="SOME"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>sort</h2>
+            <h3 id="SORT"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>splice</h2>
+            <h3 id="SPLICE"></h3>
+        </div>
+        <div id="" class="border border-black w-fit">
+            <h2>toString</h2>
+            <h3 id="TOSTRING" class="w-fit break-all"></h3>
+        </div>
+        <div id="" class="border border-black">
+            <h2>unshift</h2>
+            <h3 id="UNSHIFT" class="break-all"></h3>
+        </div>
+        <div id="" class="border border-black ">
+            <h2>valueoff</h2>
+            <h3 id="VALUEOFF" class=""></h3>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="String"
+        class="w-fit m-1 p-1  border border-red-500 gap-1 text-center text-red-400 rounded bg-cyan-100">
+        <a href="Ref/String.html">String</a>
+    </div>
+
+</body>
+
+<script src="Array.js"></script>
+<style>
+    h2 {
+        text-decoration: underline;
+    }
+
+    div {
+        border-radius: .1cm;
+    }
+</style>
+
+</html>

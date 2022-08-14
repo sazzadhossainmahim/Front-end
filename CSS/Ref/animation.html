@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- align-content -->
+    <div id="align-content" class="flex flex-wrap gap-1">
+        <div class="flex flex-wrap content-center w-40 h-40">
+            <div class="bg-red-100 w-20 h-5"></div>
+            <div class="bg-red-600 w-20 h-5"></div>
+            <div class="bg-red-900 w-20 h-5"></div>
+        </div>
+        <div class="flex flex-wrap content-start w-40 h-40">
+            <div class="bg-blue-100 w-20 h-5"></div>
+            <div class="bg-blue-600 w-20 h-5"></div>
+            <div class="bg-blue-900 w-20 h-5"></div>
+        </div>
+        <div class="flex flex-wrap content-end w-40 h-40">
+            <div class="bg-orange-100 w-20 h-5"></div>
+            <div class="bg-orange-600 w-20 h-5"></div>
+            <div class="bg-orange-900 w-20 h-5"></div>
+        </div>
+        <div class="flex flex-wrap content-between w-40 h-40">
+            <div class="bg-pink-100 w-20 h-5"></div>
+            <div class="bg-pink-600 w-20 h-5"></div>
+            <div class="bg-pink-900 w-20 h-5"></div>
+        </div>
+        <div class="flex flex-wrap content-around w-40 h-40">
+            <div class="bg-red-100 w-20 h-5"></div>
+            <div class="bg-red-600 w-20 h-5"></div>
+            <div class="bg-red-900 w-20 h-5"></div>
+        </div>
+        <div class="flex flex-wrap content-evenly w-40 h-40">
+            <div class="bg-green-100 w-20 h-5"></div>
+            <div class="bg-green-600 w-20 h-5"></div>
+            <div class="bg-green-900 w-20 h-5"></div>
+        </div>
+    </div>
+    <!-- align-items -->
+
+    <div id="alignItems" class="h-80 w-84 flex items-center p-2">
+        <div id="" class="bg-blue-100 flex-1  flex w-20 h-20"></div>
+        <div id="" class="bg-blue-600 flex-1  flex w-20 h-20"></div>
+        <div id="" class="bg-blue-900 flex-1  flex w-20 h-20"></div>
+    </div>
+
+    <div id="alignSelf" class="flex h-80 w-76 items-start">
+        <div class="bg-red-100 h-10 w-10"></div>
+        <div class="bg-red-500 self-center h-10 w-10"></div>
+        <div class="bg-red-800 h-10 w-10"></div>
+    </div>
+
+    <div id="animation" class="bg-red-300 w-full h-80">
+        <div id="animation" class="w-full h-40 bg-green-300 relative" style="animation: animation 5s infinite ;"></div>
+    </div>
+    <div id="animationDelay" class="">
+
+    </div>
+    <div id="animationDirection" class="w-full h-80 border-red-300 "
+        style="animation-direction: alternate;animation:animationDirection 5s 2">
+
+    </div>
+</body>
+<style>
+    @keyframes animation {
+        from {
+            left: 0px;
+        }
+
+        to {
+            left: 200px;
+        }
+    }
+
+    @keyframes animationDirection {
+        0% {
+            background: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background: red;
+            left: 0px;
+            top: 0px;
+        }
+
+    }
+</style>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+
+        }
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="slideShowContainer" class="max-w-full relative m-auto">
+        <div id="mySlidesFade" class="">
+            <div id="numberText" class="text-blue-200 font-sans  p-2 absolute top-0">1 / 3</div>
+            <img src="https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?cs=srgb&dl=pexels-pixabay-259915.jpg&fm=jpg"
+                class="w-full h-36  align-middle" alt="" srcset="">
+            <div id="text" class="text-red-600 font-bold p-4 absolute w-full  text-center">Caption Text</div>
+        </div>
+        <div id="mySlidesFade" class="">
+            <div id="numberText" class="text-blue-200 font-sans  p-2 absolute top-0">2 / 3</div>
+            <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?cs=srgb&dl=pexels-pixabay-235986.jpg&fm=jpg"
+                class="w-full h-36 align-middle " alt="" srcset="">
+            <div id="text" class="text-red-600 font-bold p-4 absolute w-full  text-center">Caption Text</div>
+        </div>
+        <div id="mySlidesFade" class="">
+            <div id="numberText" class="text-blue-200 font-sans p-2 absolute top-0">3 / 3</div>
+            <img src="https://images.pexels.com/photos/586744/pexels-photo-586744.jpeg?cs=srgb&dl=pexels-tejas-prajapati-586744.jpg&fm=jpg"
+                class="w-full h-36  align-middle" alt="" srcset="">
+            <div id="text" class="text-red-600 font-bold p-4 absolute w-full  text-center">Caption Text</div>
+        </div>
+
+        <a onclick="pS(-1)" id="prev"
+            class="cursor-pointer absolute top-2/4 w-auto p-4 text-white bold text-base ease-in duration-300 select-none right-0 rounded hover:bg-red-500">
+            < </a>
+                <a onclick="pS(1)" id="prev"
+                    class="cursor-pointer absolute top-2/4 w-auto p-4 text-white bold text-base ease-in duration-300 select-none right-0 rounded hover:bg-red-500">></a>
+
+    </div>
+    <br>
+    <div class="">
+        <span id="D"
+            class="cursor-pointer h-4 w-4 bg-white border rounded inline-block ease-in-out duration-300 hover:bg-emerald-900"
+            onclick="cS(1)"></span>
+        <span id="D"
+            class="cursor-pointer h-4 w-4 bg-white border rounded inline-block ease-in-out duration-300 hover:bg-emerald-900"
+            onclick="cS(2)"></span>
+        <span id="D"
+            class="cursor-pointer h-4 w-4 bg-white border rounded inline-block ease-in-out duration-300 hover:bg-emerald-900"
+            onclick="cS(3)"></span>
+    </div>
+</body>
+<script>
+    let sI = 1;
+    sS(sI);
+
+    function pS(n) {
+        sS(sI = n);
+    }
+    function sS(n) {
+        let i;
+        let S = document.getElementById("MS")
+        let d = document.getElementById("D")
+        if (n > S.length) {
+            sI = 1
+        }
+        if (n < 1) {
+            sI = S.length
+        }
+        if (n < 1) {
+            sI = S.length
+        }
+        for (i = 0; i < S.lang; i++) {
+            S[i].style.display = "none"
+        }
+        for (i = 0; i < S.length; i++) {
+            D[i].id = D[i].id.replace("active", "")
+
+        }
+        S[sI - 1].style.display = "block"
+        D[sI - 1].id += " active"
+    }
+</script>
+
+</html>
